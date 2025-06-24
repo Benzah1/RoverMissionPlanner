@@ -13,3 +13,4 @@ C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\App
 C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\Application\obj\Debug\net9.0\refint\Application.dll
 C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\Application\obj\Debug\net9.0\Application.pdb
 C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\Application\obj\Debug\net9.0\ref\Application.dll
+C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\Application\obj\Debug\net9.0\Application.sourcelink.json

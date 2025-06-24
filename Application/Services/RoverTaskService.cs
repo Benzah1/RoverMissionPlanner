@@ -22,11 +22,14 @@ public class RoverTaskService : IRoverTaskService
         if (overlapping)
             throw new InvalidOperationException("La tarea se solapa con otra que ya existe.");
 
+
+        var normalizedRover = roverName.ToUpperInvariant();
+
         // Crear una tarea nueva 
         var newTask = new RoverTask
         {
             Id = Guid.NewGuid(),
-            RoverName = roverName,
+            RoverName = normalizedRover,
             TaskType = dto.TaskType,
             Latitude = dto.Latitude,
             Longitude = dto.Longitude,

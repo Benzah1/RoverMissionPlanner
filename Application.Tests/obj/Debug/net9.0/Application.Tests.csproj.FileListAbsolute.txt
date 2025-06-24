@@ -104,3 +104,4 @@ C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\App
 C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\Application.Tests\obj\Debug\net9.0\Application.Tests.genruntimeconfig.cache
 C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\Application.Tests\obj\Debug\net9.0\ref\Application.Tests.dll
 C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\Application.Tests\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\Application.Tests\obj\Debug\net9.0\Application.Tests.sourcelink.json

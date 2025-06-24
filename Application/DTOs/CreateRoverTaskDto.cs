@@ -10,6 +10,7 @@ public class CreateRoverTaskDto
     public double Longitude { get; set; }
     public DateTime? StartsAt { get; set; }
     public int DurationMinutes { get; set; }
+   
 }
 
 

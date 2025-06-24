@@ -44,3 +44,4 @@ C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\API
 C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\API\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
 C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\API\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\API\bin\Debug\net9.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\API\obj\Debug\net9.0\API.sourcelink.json

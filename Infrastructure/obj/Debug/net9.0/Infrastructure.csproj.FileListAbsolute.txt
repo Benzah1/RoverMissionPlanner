@@ -13,3 +13,4 @@ C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\Inf
 C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\Infrastructure\obj\Debug\net9.0\refint\Infrastructure.dll
 C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\Infrastructure\obj\Debug\net9.0\Infrastructure.pdb
 C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\Infrastructure\obj\Debug\net9.0\ref\Infrastructure.dll
+C:\Users\santa\OneDrive\Escritorio\Rover Mission Planner\RoverMissionPlanner\Infrastructure\obj\Debug\net9.0\Infrastructure.sourcelink.json
