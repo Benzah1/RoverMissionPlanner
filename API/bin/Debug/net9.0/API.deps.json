@@ -1,0 +1,263 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "API/1.0.0": {
+        "dependencies": {
+          "Application": "1.0.0",
+          "FluentValidation.AspNetCore": "11.3.1",
+          "Infrastructure": "1.0.0",
+          "Microsoft.AspNetCore.OpenApi": "9.0.2",
+          "Swashbuckle.AspNetCore": "9.0.1",
+          "Swashbuckle.AspNetCore.Annotations": "9.0.1"
+        },
+        "runtime": {
+          "API.dll": {}
+        }
+      },
+      "FluentValidation/12.0.0": {
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.0.0"
+          }
+        }
+      },
+      "FluentValidation.AspNetCore/11.3.1": {
+        "dependencies": {
+          "FluentValidation": "12.0.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.11.0"
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.3.1.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.11.0": {
+        "dependencies": {
+          "FluentValidation": "12.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.11.0.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.OpenApi/9.0.2": {
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.23"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "assemblyVersion": "9.0.2.0",
+            "fileVersion": "9.0.225.6704"
+          }
+        }
+      },
+      "Microsoft.Extensions.ApiDescription.Server/8.0.0": {},
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {},
+      "Microsoft.OpenApi/1.6.23": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "assemblyVersion": "1.6.23.0",
+            "fileVersion": "1.6.23.0"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore/9.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.ApiDescription.Server": "8.0.0",
+          "Swashbuckle.AspNetCore.Swagger": "9.0.1",
+          "Swashbuckle.AspNetCore.SwaggerGen": "9.0.1",
+          "Swashbuckle.AspNetCore.SwaggerUI": "9.0.1"
+        }
+      },
+      "Swashbuckle.AspNetCore.Annotations/9.0.1": {
+        "dependencies": {
+          "Swashbuckle.AspNetCore.SwaggerGen": "9.0.1"
+        },
+        "runtime": {
+          "lib/net9.0/Swashbuckle.AspNetCore.Annotations.dll": {
+            "assemblyVersion": "9.0.1.0",
+            "fileVersion": "9.0.1.1541"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/9.0.1": {
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.23"
+        },
+        "runtime": {
+          "lib/net9.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "assemblyVersion": "9.0.1.0",
+            "fileVersion": "9.0.1.1541"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/9.0.1": {
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "9.0.1"
+        },
+        "runtime": {
+          "lib/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "assemblyVersion": "9.0.1.0",
+            "fileVersion": "9.0.1.1541"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/9.0.1": {
+        "runtime": {
+          "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "assemblyVersion": "9.0.1.0",
+            "fileVersion": "9.0.1.1541"
+          }
+        }
+      },
+      "Application/1.0.0": {
+        "dependencies": {
+          "Domain": "1.0.0",
+          "FluentValidation": "12.0.0"
+        },
+        "runtime": {
+          "Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Domain/1.0.0": {
+        "runtime": {
+          "Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "runtime": {
+          "Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "API/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FluentValidation/12.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
+      "path": "fluentvalidation/12.0.0",
+      "hashPath": "fluentvalidation.12.0.0.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/11.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FjkfrGGwC+25oH8QpX1ti3gxkFjDDtotkAQWyQz2CkwQwEfRKTANjhh77I79kY8dov2ydK1SY+e4jiOWsbbDdQ==",
+      "path": "fluentvalidation.aspnetcore/11.3.1",
+      "hashPath": "fluentvalidation.aspnetcore.11.3.1.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-viTKWaMbL3yJYgGI0DiCeavNbE9UPMWFVK2XS9nYXGbm3NDMd0/L5ER4wBzmTtW3BYh3SrlSXm9RACiKZ6stlA==",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.11.0",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.OpenApi/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JUndpjRNdG8GvzBLH/J4hen4ehWaPcshtiQ6+sUs1Bcj3a7dOsmWpDloDlpPeMOVSlhHwUJ3Xld0ClZjsFLgFQ==",
+      "path": "microsoft.aspnetcore.openapi/9.0.2",
+      "hashPath": "microsoft.aspnetcore.openapi.9.0.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.ApiDescription.Server/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jDM3a95WerM8g6IcMiBXq1qRS9dqmEUpgnCk2DeMWpPkYtp1ia+CkXabOnK93JmhVlUmv8l9WMPsCSUm+WqkIA==",
+      "path": "microsoft.extensions.apidescription.server/8.0.0",
+      "hashPath": "microsoft.extensions.apidescription.server.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8/CtASu80UIoyG+r8FstrmZW5GLtXxzoYpjj3jV0FKZCL5CiFgSH3pAmqut/dC68mu7N1bU6v0UtKKL3gCUQGQ==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+    },
+    "Microsoft.OpenApi/1.6.23": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tZ1I0KXnn98CWuV8cpI247A17jaY+ILS9vvF7yhI0uPPEqF4P1d7BWL5Uwtel10w9NucllHB3nTkfYTAcHAh8g==",
+      "path": "microsoft.openapi/1.6.23",
+      "hashPath": "microsoft.openapi.1.6.23.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore/9.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lmaz0juKGq8VgeCOki98OUVdEH7rvgBST0QrlWXNOxBl7ujNWyqdqj2SMAdgpQfTtBlSQUTHRslRM+0j7El5tA==",
+      "path": "swashbuckle.aspnetcore/9.0.1",
+      "hashPath": "swashbuckle.aspnetcore.9.0.1.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.Annotations/9.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TANd+yRHl99IPUWGcifwP+FbK48Lx7rrTqd21z/7GaduUdiKFF7/uUs85dC8Tdll70erb2s1eDsvItnt83Qz2A==",
+      "path": "swashbuckle.aspnetcore.annotations/9.0.1",
+      "hashPath": "swashbuckle.aspnetcore.annotations.9.0.1.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.Swagger/9.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4/9tBsbeCN+ewwqjEBPq3BszNE9tOvA1iDogwT7qW7L0Uh942IozhtF9VaICD70XyZIlKNiHjc2Vt5QE09P4nw==",
+      "path": "swashbuckle.aspnetcore.swagger/9.0.1",
+      "hashPath": "swashbuckle.aspnetcore.swagger.9.0.1.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/9.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Za5w1NfLMF0Tt4GTgC491wfmuuMwNw8A5nwZuytpBd4UXYZxkwNJa3QnRYGbUQD9MjLzQCYnKc8rMrr5LglW6A==",
+      "path": "swashbuckle.aspnetcore.swaggergen/9.0.1",
+      "hashPath": "swashbuckle.aspnetcore.swaggergen.9.0.1.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/9.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UuU+RvZbJZmnciVzi8G0jb3c6xeA4O8pQGrxl30eCK3pRNvurzZgS6shEei27q9wgvp0/UrTUNUM/a1kSlTfzw==",
+      "path": "swashbuckle.aspnetcore.swaggerui/9.0.1",
+      "hashPath": "swashbuckle.aspnetcore.swaggerui.9.0.1.nupkg.sha512"
+    },
+    "Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
