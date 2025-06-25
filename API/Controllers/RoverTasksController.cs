@@ -3,7 +3,9 @@ using Application.Interfaces;
 using Application.DTOs;
 using Domain.Entities;
 using API.Models;
-using Prometheus; // 👈 Import Prometheus
+using Prometheus;
+using Application.Validators; 
+using FluentValidation;       
 
 namespace API.Controllers;
 
@@ -27,7 +29,6 @@ public class TasksController : ControllerBase
     {
         _roverTaskService = roverTaskService;
 
-        // 👇 Fuerza que las métricas aparezcan en /metrics incluso sin uso inicial
         CreateTaskCounter.Inc(0);
         GetTasksCounter.Inc(0);
         GetUtilizationCounter.Inc(0);
@@ -37,7 +38,7 @@ public class TasksController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateTask(string roverName, [FromBody] CreateRoverTaskRequest request)
     {
-        CreateTaskCounter.Inc(); // Incrementar métrica
+        CreateTaskCounter.Inc();
 
         var dto = new CreateRoverTaskDto
         {
@@ -48,8 +49,18 @@ public class TasksController : ControllerBase
             DurationMinutes = request.DurationMinutes
         };
 
+        // Validación manual con FluentValidation
+        var validator = new CreateRoverTaskDtoValidator();
+        var validationResult = validator.Validate(dto);
+
+        if (!validationResult.IsValid)
+        {
+            var errors = validationResult.Errors.Select(e => e.ErrorMessage);
+            return BadRequest(new { errors });
+        }
+
         await _roverTaskService.AddTask(roverName, dto);
-        return StatusCode(201); // Created
+        return StatusCode(201);
     }
 
     // GET /rovers/{roverName}/tasks?date=YYYY-MM-DD
