@@ -80,9 +80,9 @@ public class RoverTaskServiceTests
             DurationMinutes = 45
         };
 
-        await service.AddTask("curiosity", task);
+        await service.AddTask("CURIOSITY", task);
 
-        var result = await service.GetTasksByDate("curiosity", date);
+        var result = await service.GetTasksByDate("CURIOSITY", date);
 
         result.Should().HaveCount(1);
     }
@@ -102,9 +102,9 @@ public class RoverTaskServiceTests
             DurationMinutes = 144 // 10%
         };
 
-        await service.AddTask("perseverance", task);
+        await service.AddTask("PERSEVERANCE", task);
 
-        var utilization = await service.GetUtilization("perseverance", date);
+        var utilization = await service.GetUtilization("PERSEVERANCE", date);
 
         utilization.Should().Be(10.0);
     }

@@ -3,7 +3,8 @@ using Application.Services;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Application.Validators;
-using System.Text.Json.Serialization; // 👈 Necesario para JsonStringEnumConverter
+using Prometheus;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,6 @@ builder.Services
     .AddControllers()
     .AddJsonOptions(options =>
     {
-        // Serializar enums como strings ("Drill", "Photo", etc.)
         options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
     });
 
@@ -27,38 +27,42 @@ builder.Services.AddSwaggerGen(options =>
     options.UseInlineDefinitionsForEnums();
 });
 
-// Habilitar CORS
+// CORS
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy
-            .WithOrigins("http://localhost:4200") // Angular
-            .AllowAnyHeader()
-            .AllowAnyMethod();
+        policy.WithOrigins("http://localhost:4200")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
     });
 });
 
-// Registrar servicio Rover
+// Rover service
 builder.Services.AddSingleton<IRoverTaskService, RoverTaskService>();
 
 var app = builder.Build();
 
-// Swagger solo en desarrollo
+// Prometheus
+app.UseHttpMetrics(); // Captura métricas HTTP (por endpoint, método, etc.)
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// Usar CORS antes de cualquier middleware que procese la request
 app.UseCors();
-
 app.UseMiddleware<API.Middleware.ExceptionHandlingMiddleware>();
 app.UseHttpsRedirection();
+
+// 🔥 Esta línea es clave
+app.UseRouting();
+
 app.UseAuthorization();
 
-// Mapear controladores
+// 👇 Estas deben ir después del UseRouting
 app.MapControllers();
+app.MapMetrics(); // Exponer /metrics
 
 app.Run();

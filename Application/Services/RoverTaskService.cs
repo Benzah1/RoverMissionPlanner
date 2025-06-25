@@ -16,7 +16,7 @@ public class RoverTaskService : IRoverTaskService
 
         // Verificacion de solapamiento
         var overlapping = _tasks.Any(t =>
-            t.RoverName == roverName && TheyOverlap(newStart, newEnd, t.StartsAt, t.DurationMinutes)
+            t.RoverName == roverName.ToUpperInvariant() && TheyOverlap(newStart, newEnd, t.StartsAt, t.DurationMinutes)
         );
 
         if (overlapping)
