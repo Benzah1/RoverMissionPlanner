@@ -1,0 +1,29 @@
+<div>
+  <h2>Timeline de tareas</h2>
+
+  <label>
+    Rover:
+    <input [(ngModel)]="roverName" placeholder="Nombre del rover" />
+  </label>
+
+  <label>
+    Fecha:
+    <input [(ngModel)]="selectedDate" type="date" />
+  </label>
+
+  <button (click)="loadTasks()">Buscar tareas</button>
+
+  <div *ngIf="loading">Cargando...</div>
+  <div *ngIf="error" style="color: red">{{ error }}</div>
+
+  <ul *ngIf="tasks.length > 0">
+    <li *ngFor="let task of tasks">
+      <strong>{{ task.taskType }}</strong> - {{ task.startsAt }} ({{ task.durationMinutes }} min)
+    </li>
+  </ul>
+
+  <div *ngIf="!loading && tasks.length === 0">
+    No hay tareas para este día.
+  </div>
+</div>
+
